@@ -10,11 +10,11 @@ int main()
 
     srand(time(NULL));
 
-    for (int i = 0; i < 1000000; i++)
-        a = insere(a, i);
+    for (int i = 0; i < 100; i++)
+        a = insere(a, rand()%1000); // Valores até 1000.
 
-    //arv_imprime(a);
-    printf("%d", altura(a));
+    arv_imprime(a);
+    //printf("%d", altura(a));
     arv_libera(a);
     return 0;
 }
